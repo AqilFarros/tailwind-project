@@ -359,8 +359,8 @@
             <h1 class="text-white text-2xl text-center font-bold">Popular Collections</h1>
 
             <div class="mt-10 flex justify-center gap-6">
-                <div class="bg-zinc-700 p-4 rounded-lg max-w-[500px]">
-                    <div class="grid grid-cols-4 gap-4 duration-300 group/collection">
+                <div class="bg-zinc-700 p-4 rounded-lg max-w-[500px] duration-300 ease-out group/collection hover:opacity-30">
+                    <div class="grid grid-cols-4 gap-4 duration-300">
                         <div
                             class="overflow-hidden rounded-lg col-span-2 row-span-2 duration-300 sm:group-hover/collection:translate-x-[107.5%]">
                             <img src="images/bubbleNft.webp" alt="" class="w-full h-full">
@@ -401,7 +401,7 @@
                                 </div>
                             </div>
 
-                            <p class="text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            <p class="text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-300 ease-out group-hover/collection:bg-slate-900 group-hover/collection:shadow-white group-hover/collection:text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -723,7 +723,7 @@
                     class="bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
                         <img src="images/aesthethicNft.webp" alt=""
-                            class="rounded-lg duration-200 ease-out group-hover/today:opacity-30" width="288">
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
                             class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -783,7 +783,7 @@
                     class="bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
                         <img src="images/petaniNft.webp" alt=""
-                            class="rounded-lg duration-200 ease-out group-hover/today:opacity-30" width="288">
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
                             class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -843,7 +843,7 @@
                     class="bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
                         <img src="images/sakuraNft.webp" alt=""
-                            class="rounded-lg duration-200 ease-out group-hover/today:opacity-30" width="288">
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
                             class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -899,12 +899,13 @@
                     </div>
                 </div>
 
-                <div class="md:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto">
+                <div
+                    class="md:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
-                        <img src="images/cubeNft.webp" alt="" class="rounded-lg h-full duration-300 hover:scale-125"
-                            width="288">
+                        <img src="images/cubeNft.webp" alt=""
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
-                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -912,30 +913,40 @@
                             </svg>
                             100
                         </p>
+                        <button class="border-none outline-none text-lg absolute left-2/4 top-2/4 -translate-x-2/4 translate-y-full py-2 px-5 rounded-2xl opacity-0 bg-slate-900 shadow-inner  duration-200 ease-out group-hover/today:-translate-y-2/4 group-hover/today:opacity-100 group-hover/today:shadow-white">
+                            <p class="flex whitespace-nowrap text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                Buy Now
+                            </p>
+                        </button>
                     </div>
 
                     <div class="mt-4">
-                        <h4 class="text-sm text-white font-bold">"<span>Lorem ipsum dolor sit.</span>"</h4>
+                        <h4 class="text-sm text-white font-bold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">"<span>Lorem ipsum dolor sit.</span>"</h4>
 
                         <div class="mt-2 flex justify-between items-center">
                             <div class="flex text-white">
-                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3">
+                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3 duration-200 ease-out group-hover/today:opacity-30">
                                 <div>
-                                    <h6 class="text-xs">Creator</h6>
-                                    <h5 class="text-base font-semibold">Asep Budi</h5>
+                                    <h6 class="text-xs duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Creator</h6>
+                                    <h5 class="text-base font-semibold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Asep Budi</h5>
                                 </div>
                             </div>
-                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit">SSC</h3>
+                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit shadow-inner duration-200 ease-out group-hover/today:shadow-white group-hover/today:bg-slate-900 group-hover/today:text-white">SSC</h3>
                         </div>
 
                         <div class="flex justify-between items-center mt-5">
                             <div>
-                                <h4 class="text-xs text-white">Current bid</h4>
-                                <h3 class="text-base"><span class="text-white">4.89 ETH</span> <span
-                                        class="text-xs text-slate-500">= $12</span></h3>
+                                <h4 class="text-xs text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Current bid</h4>
+                                <h3 class="text-base"><span class="text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">4.89 ETH</span> <span
+                                        class="text-xs text-slate-500 duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">= $12</span></h3>
                             </div>
                             <p
-                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm">
+                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -948,12 +959,13 @@
                     </div>
                 </div>
 
-                <div class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto">
+                <div
+                    class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
-                        <img src="images/skyLandNft.webp" alt="" class="rounded-lg h-full duration-300 hover:scale-125"
-                            width="288">
+                        <img src="images/skyLandNft.webp" alt=""
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
-                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -961,30 +973,40 @@
                             </svg>
                             100
                         </p>
+                        <button class="border-none outline-none text-lg absolute left-2/4 top-2/4 -translate-x-2/4 translate-y-full py-2 px-5 rounded-2xl opacity-0 bg-slate-900 shadow-inner  duration-200 ease-out group-hover/today:-translate-y-2/4 group-hover/today:opacity-100 group-hover/today:shadow-white">
+                            <p class="flex whitespace-nowrap text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                Buy Now
+                            </p>
+                        </button>
                     </div>
 
                     <div class="mt-4">
-                        <h4 class="text-sm text-white font-bold">"<span>Lorem ipsum dolor sit.</span>"</h4>
+                        <h4 class="text-sm text-white font-bold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">"<span>Lorem ipsum dolor sit.</span>"</h4>
 
                         <div class="mt-2 flex justify-between items-center">
                             <div class="flex text-white">
-                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3">
+                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3 duration-200 ease-out group-hover/today:opacity-30">
                                 <div>
-                                    <h6 class="text-xs">Creator</h6>
-                                    <h5 class="text-base font-semibold">Asep Budi</h5>
+                                    <h6 class="text-xs duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Creator</h6>
+                                    <h5 class="text-base font-semibold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Asep Budi</h5>
                                 </div>
                             </div>
-                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit">SSC</h3>
+                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit shadow-inner duration-200 ease-out group-hover/today:shadow-white group-hover/today:bg-slate-900 group-hover/today:text-white">SSC</h3>
                         </div>
 
                         <div class="flex justify-between items-center mt-5">
                             <div>
-                                <h4 class="text-xs text-white">Current bid</h4>
-                                <h3 class="text-base"><span class="text-white">4.89 ETH</span> <span
-                                        class="text-xs text-slate-500">= $12</span></h3>
+                                <h4 class="text-xs text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Current bid</h4>
+                                <h3 class="text-base"><span class="text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">4.89 ETH</span> <span
+                                        class="text-xs text-slate-500 duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">= $12</span></h3>
                             </div>
                             <p
-                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm">
+                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -997,12 +1019,13 @@
                     </div>
                 </div>
 
-                <div class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto">
+                <div
+                    class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
-                        <img src="images/abstractNft.webp" alt="" class="rounded-lg h-full duration-300 hover:scale-125"
-                            width="288">
+                        <img src="images/abstractNft.webp" alt=""
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
-                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1010,30 +1033,40 @@
                             </svg>
                             100
                         </p>
+                        <button class="border-none outline-none text-lg absolute left-2/4 top-2/4 -translate-x-2/4 translate-y-full py-2 px-5 rounded-2xl opacity-0 bg-slate-900 shadow-inner  duration-200 ease-out group-hover/today:-translate-y-2/4 group-hover/today:opacity-100 group-hover/today:shadow-white">
+                            <p class="flex whitespace-nowrap text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                Buy Now
+                            </p>
+                        </button>
                     </div>
 
                     <div class="mt-4">
-                        <h4 class="text-sm text-white font-bold">"<span>Lorem ipsum dolor sit.</span>"</h4>
+                        <h4 class="text-sm text-white font-bold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">"<span>Lorem ipsum dolor sit.</span>"</h4>
 
                         <div class="mt-2 flex justify-between items-center">
                             <div class="flex text-white">
-                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3">
+                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3 duration-200 ease-out group-hover/today:opacity-30">
                                 <div>
-                                    <h6 class="text-xs">Creator</h6>
-                                    <h5 class="text-base font-semibold">Asep Budi</h5>
+                                    <h6 class="text-xs duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Creator</h6>
+                                    <h5 class="text-base font-semibold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Asep Budi</h5>
                                 </div>
                             </div>
-                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit">SSC</h3>
+                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit shadow-inner duration-200 ease-out group-hover/today:shadow-white group-hover/today:bg-slate-900 group-hover/today:text-white">SSC</h3>
                         </div>
 
                         <div class="flex justify-between items-center mt-5">
                             <div>
-                                <h4 class="text-xs text-white">Current bid</h4>
-                                <h3 class="text-base"><span class="text-white">4.89 ETH</span> <span
-                                        class="text-xs text-slate-500">= $12</span></h3>
+                                <h4 class="text-xs text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Current bid</h4>
+                                <h3 class="text-base"><span class="text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">4.89 ETH</span> <span
+                                        class="text-xs text-slate-500 duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">= $12</span></h3>
                             </div>
                             <p
-                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm">
+                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1046,12 +1079,13 @@
                     </div>
                 </div>
 
-                <div class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto">
+                <div
+                    class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
-                        <img src="images/bubbleNft.webp" alt="" class="rounded-lg h-full duration-300 hover:scale-125"
-                            width="288">
+                        <img src="images/bubbleNft.webp" alt=""
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
-                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1059,30 +1093,40 @@
                             </svg>
                             100
                         </p>
+                        <button class="border-none outline-none text-lg absolute left-2/4 top-2/4 -translate-x-2/4 translate-y-full py-2 px-5 rounded-2xl opacity-0 bg-slate-900 shadow-inner  duration-200 ease-out group-hover/today:-translate-y-2/4 group-hover/today:opacity-100 group-hover/today:shadow-white">
+                            <p class="flex whitespace-nowrap text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                Buy Now
+                            </p>
+                        </button>
                     </div>
 
                     <div class="mt-4">
-                        <h4 class="text-sm text-white font-bold">"<span>Lorem ipsum dolor sit.</span>"</h4>
+                        <h4 class="text-sm text-white font-bold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">"<span>Lorem ipsum dolor sit.</span>"</h4>
 
                         <div class="mt-2 flex justify-between items-center">
                             <div class="flex text-white">
-                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3">
+                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3 duration-200 ease-out group-hover/today:opacity-30">
                                 <div>
-                                    <h6 class="text-xs">Creator</h6>
-                                    <h5 class="text-base font-semibold">Asep Budi</h5>
+                                    <h6 class="text-xs duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Creator</h6>
+                                    <h5 class="text-base font-semibold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Asep Budi</h5>
                                 </div>
                             </div>
-                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit">SSC</h3>
+                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit shadow-inner duration-200 ease-out group-hover/today:shadow-white group-hover/today:bg-slate-900 group-hover/today:text-white">SSC</h3>
                         </div>
 
                         <div class="flex justify-between items-center mt-5">
                             <div>
-                                <h4 class="text-xs text-white">Current bid</h4>
-                                <h3 class="text-base"><span class="text-white">4.89 ETH</span> <span
-                                        class="text-xs text-slate-500">= $12</span></h3>
+                                <h4 class="text-xs text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Current bid</h4>
+                                <h3 class="text-base"><span class="text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">4.89 ETH</span> <span
+                                        class="text-xs text-slate-500 duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">= $12</span></h3>
                             </div>
                             <p
-                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm">
+                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1095,12 +1139,13 @@
                     </div>
                 </div>
 
-                <div class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto">
+                <div
+                    class="xl:block hidden bg-zinc-700 p-4 rounded-lg max-w-fit mx-auto duration-200 ease-out group/today hover:bg-black">
                     <div class="relative rounded-lg h-[400px] overflow-hidden">
                         <img src="images/astronautNft.webp" alt=""
-                            class="rounded-lg h-full duration-300 hover:scale-125" width="288">
+                            class="rounded-lg h-full duration-200 ease-out group-hover/today:opacity-30" width="288">
                         <p
-                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm">
+                            class="absolute top-[5%] right-[5%] text-white flex items-center bg-black py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white group-hover/today:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-4 h-4 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1108,30 +1153,40 @@
                             </svg>
                             100
                         </p>
+                        <button class="border-none outline-none text-lg absolute left-2/4 top-2/4 -translate-x-2/4 translate-y-full py-2 px-5 rounded-2xl opacity-0 bg-slate-900 shadow-inner  duration-200 ease-out group-hover/today:-translate-y-2/4 group-hover/today:opacity-100 group-hover/today:shadow-white">
+                            <p class="flex whitespace-nowrap text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                Buy Now
+                            </p>
+                        </button>
                     </div>
 
                     <div class="mt-4">
-                        <h4 class="text-sm text-white font-bold">"<span>Lorem ipsum dolor sit.</span>"</h4>
+                        <h4 class="text-sm text-white font-bold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">"<span>Lorem ipsum dolor sit.</span>"</h4>
 
                         <div class="mt-2 flex justify-between items-center">
                             <div class="flex text-white">
-                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3">
+                                <img src="images/userDummy.webp" alt="" class="w-10 rounded-lg mr-3 duration-200 ease-out group-hover/today:opacity-30">
                                 <div>
-                                    <h6 class="text-xs">Creator</h6>
-                                    <h5 class="text-base font-semibold">Asep Budi</h5>
+                                    <h6 class="text-xs duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Creator</h6>
+                                    <h5 class="text-base font-semibold duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Asep Budi</h5>
                                 </div>
                             </div>
-                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit">SSC</h3>
+                            <h3 class="text-white bg-violet-700 py-1 px-2 rounded-lg max-w-fit shadow-inner duration-200 ease-out group-hover/today:shadow-white group-hover/today:bg-slate-900 group-hover/today:text-white">SSC</h3>
                         </div>
 
                         <div class="flex justify-between items-center mt-5">
                             <div>
-                                <h4 class="text-xs text-white">Current bid</h4>
-                                <h3 class="text-base"><span class="text-white">4.89 ETH</span> <span
-                                        class="text-xs text-slate-500">= $12</span></h3>
+                                <h4 class="text-xs text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">Current bid</h4>
+                                <h3 class="text-base"><span class="text-white duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">4.89 ETH</span> <span
+                                        class="text-xs text-slate-500 duration-200 ease-out group-hover/today:text-slate-600 group-hover/today:tracking-widest">= $12</span></h3>
                             </div>
                             <p
-                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm">
+                                class="text-white flex items-center bg-transparent py-1 px-2 rounded-lg max-w-fit text-sm shadow-inner duration-200 ease-out group-hover/today:bg-slate-900 group-hover/today:shadow-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
