@@ -1976,6 +1976,11 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-violet-900 {
+  --tw-shadow-color: #4c1d95;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2177,6 +2182,11 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group\/collection:hover .group-hover\/collection\:text-violet-200 {
+  --tw-text-opacity: 1;
+  color: rgb(221 214 254 / var(--tw-text-opacity));
+}
+
 .group\/today:hover .group-hover\/today\:opacity-100 {
   opacity: 1;
 }
@@ -2189,6 +2199,12 @@ input:checked + .toggle-bg {
   opacity: 1;
 }
 
+.group\/collection:hover .group-hover\/collection\:shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .group\/today:hover .group-hover\/today\:shadow-white {
   --tw-shadow-color: #ffffff;
   --tw-shadow: var(--tw-shadow-colored);
@@ -2196,6 +2212,16 @@ input:checked + .toggle-bg {
 
 .group\/collection:hover .group-hover\/collection\:shadow-white {
   --tw-shadow-color: #ffffff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.group\/collection:hover .group-hover\/collection\:shadow-violet-900 {
+  --tw-shadow-color: #4c1d95;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.group\/collection:hover .group-hover\/collection\:shadow-violet-700 {
+  --tw-shadow-color: #6d28d9;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
