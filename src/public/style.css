@@ -1397,6 +1397,27 @@ input:checked + .toggle-bg {
   transform: none;
 }
 
+@keyframes ajubAjub {
+  30%, 38% {
+    box-shadow: 0 0 20px 5px #4c1d95;
+    background-color: black;
+  }
+
+  40%, 90% {
+    box-shadow: 0 0 5px 5px #4c1d95;
+    background-color: black;
+  }
+
+  100%, 0%, 25% {
+    box-shadow: 0 0 0 0;
+    background-color: #3f3f46;
+  }
+}
+
+.animate-\[ajubAjub_10s_linear_infinite\] {
+  animation: ajubAjub 10s linear infinite;
+}
+
 .cursor-default {
   cursor: default;
 }
@@ -1976,11 +1997,6 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-violet-900 {
-  --tw-shadow-color: #4c1d95;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2104,18 +2120,6 @@ input:checked + .toggle-bg {
   text-decoration-line: underline;
 }
 
-.hover\:opacity-0:hover {
-  opacity: 0;
-}
-
-.hover\:opacity-30:hover {
-  opacity: 0.3;
-}
-
-.hover\:opacity-10:hover {
-  opacity: 0.1;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2153,18 +2157,23 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group\/today:hover .group-hover\/today\:bg-slate-900 {
+.group\/collection:hover .group-hover\/collection\:bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.group\/collection:hover .group-hover\/collection\:bg-slate-900 {
+.group\/today:hover .group-hover\/today\:bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .group\/today:hover .group-hover\/today\:tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.group\/collection:hover .group-hover\/collection\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group\/today:hover .group-hover\/today\:text-slate-600 {
@@ -2177,16 +2186,6 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.group\/collection:hover .group-hover\/collection\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.group\/collection:hover .group-hover\/collection\:text-violet-200 {
-  --tw-text-opacity: 1;
-  color: rgb(221 214 254 / var(--tw-text-opacity));
-}
-
 .group\/today:hover .group-hover\/today\:opacity-100 {
   opacity: 1;
 }
@@ -2195,18 +2194,8 @@ input:checked + .toggle-bg {
   opacity: 0.3;
 }
 
-.group\/collection:hover .group-hover\/collection\:opacity-100 {
-  opacity: 1;
-}
-
-.group\/collection:hover .group-hover\/collection\:shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.group\/today:hover .group-hover\/today\:shadow-white {
-  --tw-shadow-color: #ffffff;
+.group\/collection:hover .group-hover\/collection\:shadow-violet-900 {
+  --tw-shadow-color: #4c1d95;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2215,13 +2204,8 @@ input:checked + .toggle-bg {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.group\/collection:hover .group-hover\/collection\:shadow-violet-900 {
-  --tw-shadow-color: #4c1d95;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.group\/collection:hover .group-hover\/collection\:shadow-violet-700 {
-  --tw-shadow-color: #6d28d9;
+.group\/today:hover .group-hover\/today\:shadow-white {
+  --tw-shadow-color: #ffffff;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2270,6 +2254,11 @@ input:checked + .toggle-bg {
 
 :is(.dark .dark\:bg-gray-900\/80) {
   background-color: rgb(17 24 39 / 0.8);
+}
+
+:is(.dark .dark\:bg-white) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:text-blue-500) {
