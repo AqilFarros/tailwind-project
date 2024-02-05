@@ -159,7 +159,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script>
+    <!-- <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
                 '(prefers-color-scheme: dark)').matches)) {
@@ -176,19 +176,19 @@
 
         // Whenever the user explicitly chooses to respect the OS preference
         localStorage.removeItem('theme')
-    </script>
+    </script> -->
 </head>
 
 <body>
     <nav
-        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        class="bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-600">
         <div class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NFTs</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">NFTs</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -200,59 +200,44 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 md:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            class="block py-2 px-3 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            class="block py-2 px-3 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Services</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            class="block py-2 px-3 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Contact</a>
                     </li>
                 </ul>
-            </div>
-
-            <div class="box-theme">
-                <div class="sun-box">
-                    <div class="line" style="--i:0"></div>
-                    <div class="line" style="--i:1"></div>
-                    <div class="line" style="--i:2"></div>
-                    <div class="line" style="--i:3"></div>
-                    <div class="line" style="--i:4"></div>
-                    <div class="line" style="--i:5"></div>
-                    <div class="line" style="--i:6"></div>
-                    <div class="line" style="--i:7"></div>
-                    <div class="moon"></div>
-                    <div class="sun"></div>
-                </div>
             </div>
         </div>
     </nav>
 
-    <div class="lg:pt-40 pt-24 py-20 dark:bg-slate-900 bg-slate-100">
+    <div class="lg:pt-40 pt-24 py-20 bg-slate-900">
         <div class="container mx-auto">
             <div class="grid lg:grid-cols-2 grid-cols-1">
                 <img src="images/nft-banner.jpg" alt=""
                     class="mx-auto rounded-3xl xl:w-2/4 lg:w-3/4 sm:w-2/4 w-3/4 mb-10">
                 <div class="lg:text-right text-center lg:mr-10 lg:flex flex-col justify-center">
-                    <h1 class="lg:text-5xl lg:text-right text-3xl font-bold dark:text-white">Discover, find</h1>
+                    <h1 class="lg:text-5xl lg:text-right text-3xl font-bold text-white">Discover, find</h1>
                     <h1 class="lg:text-6xl lg:text-right text-4xl font-bold text-transparent title">Sell extraordinary
                     </h1>
-                    <h1 class="lg:text-5xl lg:text-right text-3xl font-bold dark:text-white">Master NFTs</h1>
-                    <p class="text-xl lg:text-right dark:text-white my-10 mx-4">Marketplace for Lorem ipsum dolor sit Toke
+                    <h1 class="lg:text-5xl lg:text-right text-3xl font-bold text-white">Master NFTs</h1>
+                    <p class="text-xl lg:text-right text-white my-10 mx-4">Marketplace for Lorem ipsum dolor sit Toke
                         NFTs</p>
                     <div class="grid md:grid-cols-2 grid-cols-1 lg:ml-auto gap-x-4">
                         <button
-                            class="py-5 px-14 bg-violet-300 dark:bg-violet-950 text-violet-800 dark:text-violet-200 border-violet-300 dark:border-violet-950 font-bold border rounded-full flex max-w-fit duration-300 ease-out hover:bg-transparent dark:hover:bg-transparent hover:text-violet-700 mx-auto"><svg
+                            class="py-5 px-14 bg-violet-950 text-violet-200 border-violet-950 font-bold border rounded-full flex max-w-fit duration-300 ease-out hover:bg-transparent hover:text-violet-700 mx-auto"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -260,7 +245,7 @@
                             </svg>
                             Explore</button>
                         <button
-                            class="py-5 px-14 bg-transparent text-violet-600  dark:text-violet-800 border-violet-300 dark:border-violet-950 font-bold border rounded-full flex max-w-fit mx-auto duration-300 ease-out hover:bg-violet-300 hover:text-white dark:hover:bg-violet-950 dark:hover:text-violet-200 md:mt-0 mt-10"><svg
+                            class="py-5 px-14 bg-transparent text-violet-800 border-violet-950 font-bold border rounded-full flex max-w-fit mx-auto duration-300 ease-out hover:bg-violet-950 hover:text-violet-200 md:mt-0 mt-10"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -273,7 +258,7 @@
             <div class="container mt-28 px-10">
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-x-4">
                     <div
-                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-300 dark:hover:bg-violet-950 hover:text-violet-950 dark:hover:text-violet-200">
+                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-950 hover:text-violet-200">
                         <div class="p-3 mx-auto bg-sky-600 max-w-fit rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-white">
@@ -282,13 +267,13 @@
                             </svg>
                         </div>
 
-                        <h3 class="text-2xl dark:text-white font-bold mt-5">theme</h3>
-                        <p class="dark:text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        <h3 class="text-2xl text-white font-bold mt-5">theme</h3>
+                        <p class="text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                             maiores alias qui voluptatibus est
                             voluptatem?</p>
                     </div>
                     <div
-                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-300 dark:hover:bg-violet-950 hover:text-violet-950 dark:hover:text-violet-200">
+                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-950 hover:text-violet-200">
                         <div class="p-3 mx-auto bg-lime-600 max-w-fit rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 stroke-white">
@@ -297,13 +282,13 @@
                             </svg>
                         </div>
 
-                        <h3 class="text-2xl dark:text-white font-bold mt-5">theme</h3>
-                        <p class="dark:text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        <h3 class="text-2xl text-white font-bold mt-5">theme</h3>
+                        <p class="text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                             maiores alias qui voluptatibus est
                             voluptatem?</p>
                     </div>
                     <div
-                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-300 dark:hover:bg-violet-950 hover:text-violet-950 dark:hover:text-violet-200">
+                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-950 hover:text-violet-200">
                         <div class="p-3 mx-auto bg-purple-600 max-w-fit rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 stroke-white">
@@ -312,13 +297,13 @@
                             </svg>
                         </div>
 
-                        <h3 class="text-2xl dark:text-white font-bold mt-5">theme</h3>
-                        <p class="dark:text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        <h3 class="text-2xl text-white font-bold mt-5">theme</h3>
+                        <p class="text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                             maiores alias qui voluptatibus est
                             voluptatem?</p>
                     </div>
                     <div
-                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-300 dark:hover:bg-violet-950 hover:text-violet-950 dark:hover:text-violet-200">
+                        class="text-center my-10 p-8 rounded-3xl duration-300 ease-out hover:bg-violet-950 hover:text-violet-200">
                         <div class="p-3 mx-auto bg-rose-500 max-w-fit rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 stroke-white">
@@ -326,8 +311,8 @@
                                     d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
                             </svg>
                         </div>
-                        <h3 class="text-2xl dark:text-white font-bold mt-5">theme</h3>
-                        <p class="dark:text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        <h3 class="text-2xl text-white font-bold mt-5">theme</h3>
+                        <p class="text-white text-sm mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                             maiores alias qui voluptatibus est
                             voluptatem?</p>
                     </div>
@@ -1631,7 +1616,7 @@
     </footer>
 
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script>
+    <!-- <script>
         let sunBox = document.querySelector(".sun-box");
 
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
@@ -1667,7 +1652,7 @@
             }
 
             this.classList.toggle("bulan");
-        }
+        } -->
     </script>
 </body>
 
