@@ -159,24 +159,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
-                '(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-
-        // Whenever the user explicitly chooses light mode
-        localStorage.theme = 'light'
-
-        // Whenever the user explicitly chooses dark mode
-        localStorage.theme = 'dark'
-
-        // Whenever the user explicitly chooses to respect the OS preference
-        localStorage.removeItem('theme')
-    </script> -->
 </head>
 
 <body>
@@ -1490,7 +1472,7 @@
         </div>
     </div>
 
-    <!-- IDN SENTUL -->
+    <!-- IDN BOARDING SCHOOL SENTUL -->
 
     <footer class="bg-black shadow-2xl">
         <div class="mx-auto w-full">
@@ -1616,44 +1598,6 @@
     </footer>
 
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <!-- <script>
-        let sunBox = document.querySelector(".sun-box");
-
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
-                '(prefers-color-scheme: dark)').matches)) {
-            sunBox.classList.add("bulan")
-        } else {
-
-        }
-
-        const body = document.body;
-        const darkElements = document.querySelectorAll('[class*="dark"]')
-
-        sunBox.onclick = function () {
-            // if set via local storage previously
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-
-                // if NOT set via local storage previously
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
-            }
-
-            this.classList.toggle("bulan");
-        } -->
-    </script>
 </body>
 
 </html>
